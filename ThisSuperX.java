@@ -1,13 +1,11 @@
 class Base
 {
     public int i;
-    public int j;
 
     public Base()
     {
         System.out.println("Inside Base constructor");
         this.i = 11;
-        this.j = 21;
     }
 
     public void fun()
@@ -18,24 +16,23 @@ class Base
 
 class Derived extends Base
 {
-    public int x;
+    public int i;
 
     public Derived()
     {
         System.out.println("Inside Derived constructor");
-        this.x = 51;
+        this.i = 21;
     }
 
     public void gun()
     {
         System.out.println("Inside gun of Derived");
         System.out.println("Value of i : "+i);
-        System.out.println("Value of j : "+j);
-        System.out.println("Value of x : "+x);
+        System.out.println("Value of i from base :"+super.i);
     }
 }
 
-class ThisSuperX
+class ThisSuperXX
 {
     public static void main(String A[])
     {
